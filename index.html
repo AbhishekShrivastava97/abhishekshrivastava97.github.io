@@ -1,69 +1,164 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <style>
-    body { font-family: Arial; margin: 40px; background: #f4f4f4; }
-    h1 { color: #333; }
-    .card { background: white; padding: 20px; border-radius: 8px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Shrivastava | Portfolio</title>
+
+<style>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f5f7fa;
+  color:#222;
+  margin:0;
+}
+.container{
+  max-width:1000px;
+  margin:auto;
+  background:#fff;
+  padding:30px;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:3px solid #0f4c81;
+  padding-bottom:20px;
+}
+.header h1{
+  margin:0;
+  color:#0f4c81;
+}
+.header p{
+  margin:4px 0;
+}
+.header img{
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #0f4c81;
+}
+.section{
+  margin-top:30px;
+}
+.section h2{
+  color:#0f4c81;
+  border-bottom:2px solid #ddd;
+  padding-bottom:5px;
+}
+ul{
+  margin:10px 0 0 20px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.footer{
+  margin-top:40px;
+  text-align:center;
+}
+.btn{
+  display:inline-block;
+  padding:10px 18px;
+  background:#0f4c81;
+  color:#fff;
+  text-decoration:none;
+  border-radius:5px;
+  margin:5px;
+}
+.btn.whatsapp{
+  background:#25d366;
+}
+@media(max-width:768px){
+  .header{
+    flex-direction:column-reverse;
+    text-align:center;
+  }
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Abhishek Shrivastava</h1>
-    <p><b>Role:</b> Purchase Executive</p>
-    <p><b>Email:</b> Abhishek.shrivastava@sudisa.in</p>
+<div class="container">
 
-    <h3>About Me</h3>
-    <p> I am Abhishek Shrivastava, a B.Sc. Computer Science graduate with over 6 years of hands-on experience in New Product Development (NPD), 
-      quality documentation, and machine shop operations within the automotive and manufacturing industry. 
-      I have worked extensively in IATF-driven environments, supporting end-to-end product development from documentation to production readiness.
-      My professional journey spans roles such as Assistant Manager – NPD, Junior Engineer – NPD, and Document Controller, 
-      where I have consistently contributed to APQP & PPAP execution, audit support, process documentation, and cross-functional coordination. 
-      I am experienced in handling customer requirements, managing technical documents, and ensuring compliance with quality standards.
-      I am known for my detail-oriented approach, strong documentation skills, and ability to work collaboratively with production, quality, 
-      design, and customer teams. I aim to continuously improve processes, support smooth product launches, 
-      and add value to manufacturing operations through structured quality systems and data-driven analysis.</p>
-
-    <h3> Skills </h3>
-      <h3>Quality & NPD </h3>
-    <ul>
-      <li>APQP & PPAP Documentation.</li>
-      <li>PSW Submission & Customer Portals.</li>
-      <li>PFMEA, Control Plans, Process Flow Diagrams.</li>
-      <li> SOPs & Work Instructions Development.</li>
-      <li>New Product Development (NPD) Documentation. </li>
-    </ul> 
-
-      <h3>Data Analysis & Quality Tools</h3>
-    <ul>
-      <li>SPC & MSA (Gauge R&R).</li>
-      <li>Minitab (Statistical Analysis).</li>
-      <li>Audit Support (Internal & External).</li>
-      <li>NABL & Calibration Compliance.</li>
-    </ul>
-    
-      <h3>Manufacturing & Shop-Floor Support</h3>
-    <ul>
-      <li>Machine Shop Documentation.</li>
-      <li>OEE Reporting & Production Data Analysis.</li>
-      <li>Kaizen & Continuous Improvement Records.</li>
-      <li>Gauge Management & Calibration Tracking.</li>
-    </ul>
-
-      <h3> Software & Technical Skills</h3> 
-    <ul>
-      <li>AutoCAD (2D Drawing Interpretation).</li>
-      <li>SAP.</li>
-      <li>MS Excel, Word, PowerPoint.</li>
-      <li>Technical & Process Documentation.</li>
-    </ul>
-</li>
-   
-
-    <h2>Projects</h2>
-    <p>Portfolio Website</p>
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <h1>Abhishek Shrivastava</h1>
+      <p><b>Role:</b> Purchase Executive</p>
+      <p><b>Email:</b> Abhishek.shrivastava@sudisa.in</p>
+    </div>
+    <img src="profile.jpg" alt="Profile Photo">
   </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      B.Sc. Computer Science graduate with over 6 years of experience in New Product Development (NPD),
+      quality documentation, and shop-floor operations in automotive and manufacturing environments.
+      Experienced in APQP & PPAP execution, audits, customer documentation, and cross-functional coordination.
+    </p>
+  </div>
+
+  <!-- CORE SKILLS -->
+  <div class="section">
+    <h2>Core Competencies</h2>
+    <div class="grid">
+      <ul>
+        <li>APQP & PPAP Documentation</li>
+        <li>PSW Submission & Customer Portals</li>
+        <li>PFMEA & Control Plans</li>
+        <li>SOPs & Work Instructions</li>
+      </ul>
+      <ul>
+        <li>SPC & MSA (Gauge R&R)</li>
+        <li>Internal & External Audits</li>
+        <li>Quality Compliance</li>
+        <li>NPD Documentation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MANUFACTURING -->
+  <div class="section">
+    <h2>Manufacturing & Shop-Floor Support</h2>
+    <ul>
+      <li>Machine Shop Documentation</li>
+      <li>OEE Reporting & Productivity Analysis</li>
+      <li>Kaizen & Continuous Improvement</li>
+      <li>Gauge Management & Calibration Tracking</li>
+    </ul>
+  </div>
+
+  <!-- SOFTWARE -->
+  <div class="section">
+    <h2>Software & Technical Skills</h2>
+    <ul>
+      <li>AutoCAD (2D Drawing Interpretation)</li>
+      <li>SAP</li>
+      <li>MS Excel, Word, PowerPoint</li>
+      <li>Technical & Process Documentation</li>
+    </ul>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
+    <p>Personal Portfolio Website (GitHub Pages)</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+    <a class="btn whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
+  </div>
+
+</div>
 </body>
 </html>
